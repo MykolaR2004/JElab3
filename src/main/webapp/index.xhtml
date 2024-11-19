@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+<h:head>
+    <title>JSF - Hello World</title>
+    <link rel="stylesheet" type="text/css" href="style/style.css"/>
+</h:head>
+<h:body>
+    <div class="main">
+        <div class="container">
+            <h:form>
+                <h:outputLabel for="x" value="Start:"/>
+                <h:inputText id="x" value="#{sumBean.x}" type="number"/>
+                <br/>
+
+                <h:outputLabel for="n" value="End:"/>
+                <h:inputText id="n" value="#{sumBean.n}" type="number"/>
+                <br/>
+
+                <h:outputLabel for="e" value="Step:"/>
+                <h:inputText id="e" value="#{sumBean.e}" type="number"/>
+                <br/>
+
+                <h:commandButton value="Calculate" action="#{sumBean.calculate}" styleClass="button"/>
+            </h:form>
+        </div>
+
+        <div class="container">
+            <h:form>
+                <h:outputLabel for="a" value="Start:"/>
+                <h:inputText id="a" value="#{tabulationBean.a}" type="number"/>
+                <br/>
+
+                <h:outputLabel for="b" value="End:"/>
+                <h:inputText id="b" value="#{tabulationBean.b}" type="number"/>
+                <br/>
+
+                <h:outputLabel for="h" value="Step:"/>
+                <h:inputText id="h" value="#{tabulationBean.h}" type="number"/>
+                <br/>
+
+                <h:commandButton value="Calculate" action="#{tabulationBean.calculate}" styleClass="button"/>
+            </h:form>
+        </div>
+    </div>
+</h:body>
+</html>
