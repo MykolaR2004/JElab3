@@ -30,7 +30,7 @@ public class TabulationBean {
         Tabulation calcFunction = new Tabulation();
         calcFunction.calculate(a, b, h);
 
-        result = new Result(0, 0, 0, calcFunction.getXArr(), calcFunction.getYArr());
+        result = new Result(0, 0, 0, 0, calcFunction.getXArr(), calcFunction.getYArr());
         System.out.println(result);
         return "tabulation";
     }

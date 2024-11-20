@@ -10,14 +10,17 @@
         <div class="container">
             <h2>Sum</h2>
             <h:form>
-                <h:outputLabel for="x" value="Start:"/>
+                <h:outputLabel for="x" value="X:"/>
                 <h:inputText id="x" value="#{sumBean.x}" type="number"/>
 
-                <h:outputLabel for="n" value=" End:"/>
+                <h:outputLabel for="n" value=" N:"/>
                 <h:inputText id="n" value="#{sumBean.n}" type="number"/>
 
-                <h:outputLabel for="e" value=" Step:"/>
-                <h:inputText id="e" value="#{sumBean.e}" type="number"/>
+                <h:outputLabel for="e1" value=" E1:"/>
+                <h:inputText id="e1" value="#{sumBean.e1}" type="number"/>
+
+                <h:outputLabel for="e2" value=" E2:"/>
+                <h:inputText id="e2" value="#{sumBean.e2}" type="number"/>
 
                 <h:commandButton value="Calculate" action="#{sumBean.calculate}" />
             </h:form>

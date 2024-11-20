@@ -13,18 +13,20 @@ public class Result {
 
 
     private double sum;
-    private double sumOfElementsBiggerThanE;
+    private double firstSumOfElementsBiggerThanE;
+    private double secondSumOfElementsBiggerThanE;
     private double difference;
     private double[] xArr;
     private double[] yArr;
 
-    public Result(double sum, double[] yArr, double[] xArr, double difference, double sumOfElementsBiggerThanE) {
+    public Result(double sum, double[] yArr, double[] xArr, double difference, double firstSumOfElementsBiggerThanE, double secondSumOfElementsBiggerThanE) {
         System.out.println("Here's result constructor invoked");
         this.sum = sum;
         this.xArr = xArr;
         this.yArr = yArr;
         this.difference = difference;
-        this.sumOfElementsBiggerThanE = sumOfElementsBiggerThanE;
+        this.firstSumOfElementsBiggerThanE = firstSumOfElementsBiggerThanE;
+        this.secondSumOfElementsBiggerThanE = secondSumOfElementsBiggerThanE;
     }
 
     public List<Point> getPairs() {

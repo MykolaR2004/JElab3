@@ -10,7 +10,8 @@
     <h:form>
         <h:panelGrid columns="1" rendered="#{not empty sumBean.result}">
             <h:outputText value="Sum: #{sumBean.result.sum}" />
-            <h:outputText value="Sum of elements > E: #{sumBean.result.sumOfElementsBiggerThanE}" />
+            <h:outputText value="First sum of elements > #{sumBean.e1}: #{sumBean.result.firstSumOfElementsBiggerThanE}" />
+            <h:outputText value="Second sum of elements > #{sumBean.e2}: #{sumBean.result.secondSumOfElementsBiggerThanE}" />
             <h:outputText value="Difference: #{sumBean.result.difference}" />
         </h:panelGrid>
     </h:form>
