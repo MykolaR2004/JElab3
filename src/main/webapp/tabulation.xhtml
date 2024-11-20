@@ -3,8 +3,10 @@
       xmlns:h="http://xmlns.jcp.org/jsf/html" xmlns:f="http://java.sun.com/jsf/core">
 <h:head>
     <title>JSF Tabulation</title>
+    <link rel="stylesheet" type="text/css" href="style/style.css"/>
 </h:head>
 <h:body>
+    <div class="container">
     <h:form>
         <h:dataTable value="#{tabulationBean.result.pairs}" var="pair" rendered="#{not empty tabulationBean.result}">
             <h:column>
@@ -17,6 +19,7 @@
             </h:column>
         </h:dataTable>
     </h:form>
+    </div>
 </h:body>
 </html>
 

@@ -3,14 +3,17 @@
       xmlns:h="http://xmlns.jcp.org/jsf/html">
 <h:head>
     <title>JSF Sum Calculation</title>
+    <link rel="stylesheet" type="text/css" href="style/style.css"/>
 </h:head>
 <h:body>
+    <div class="container">
     <h:form>
-        <h:panelGroup rendered="#{not empty sumBean.result}">
+        <h:panelGrid columns="1" rendered="#{not empty sumBean.result}">
             <h:outputText value="Sum: #{sumBean.result.sum}" />
             <h:outputText value="Sum of elements > E: #{sumBean.result.sumOfElementsBiggerThanE}" />
             <h:outputText value="Difference: #{sumBean.result.difference}" />
-        </h:panelGroup>
+        </h:panelGrid>
     </h:form>
+    </div>
 </h:body>
 </html>
